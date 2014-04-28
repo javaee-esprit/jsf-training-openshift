@@ -4,9 +4,10 @@
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 template="/template/template.xhtml">
                 	
-			<ui:define name="pageTitle">access denied</ui:define>		
+			<ui:define name="pageTitle">customer home</ui:define>		
 			<ui:define name="pageContent">
-			<h2>access denied</h2>
-			<p>You've provided bad credentials!</p>
-			</ui:define>
+				<h2>Welcome to the customer home</h2>
+		  		<p>#{authBean.user.login} logged in successfully!</p>
+		  		<p>your email is #{authBean.user.email}</p>
+	  		</ui:define>
 </ui:composition>

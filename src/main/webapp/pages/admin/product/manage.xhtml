@@ -4,10 +4,9 @@
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 template="/template/template.xhtml">
                 	
-			<ui:define name="pageTitle">admin home</ui:define>		
+			<ui:define name="pageTitle">manage products</ui:define>		
 			<ui:define name="pageContent">
-				<h2>Welcome to the Admin home</h2>
-		  		<p>#{authBean.user.login} logged in successfully!</p>
-		  		<p>your email is #{authBean.user.email}</p>
-	  		</ui:define>
+				<ui:include src="/pages/admin/product/list.xhtml" />
+				<ui:include src="/pages/admin/product/form.xhtml" />
+			</ui:define>
 </ui:composition>

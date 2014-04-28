@@ -23,4 +23,6 @@ public interface CatalogServiceLocal {
 	Category findCategoryById(int id);
 	void removeCategory(Category category);
 	List<Category> findAllCategories();
+	
+	Category findCategoryByName(String name);
 }

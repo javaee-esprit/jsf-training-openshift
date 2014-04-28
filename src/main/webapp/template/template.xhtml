@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en"
       xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets">
-      
 	<h:head>
 		<title><ui:insert name="pageTitle" /></title>
 		<h:outputStylesheet library="css" name="application.css" />
@@ -18,16 +17,16 @@
 				<hr></hr>
 				<div id="horizon">
 					<div id="topbar">
-						<ui:include src="/template/topbar.xhtml"/>
+						<ui:include src="/template/topbar.xhtml" />
 					</div>
 					<div id="identity">
-						...IDENTITY...
+						<ui:include src="/template/identity.xhtml" />
 					</div>
 				</div>	
 				<hr></hr>				
 				<div id="main">
 					<div id="navigation">
-						...NAV..
+						<ui:include src="/template/nav.xhtml" />
 					</div>
 					<div id="content">
 						<ui:insert name="pageContent" />
