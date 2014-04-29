@@ -25,4 +25,5 @@ public interface CatalogServiceLocal {
 	List<Category> findAllCategories();
 	
 	Category findCategoryByName(String name);
+	byte[] findPictureByProductId(int productId);
 }
