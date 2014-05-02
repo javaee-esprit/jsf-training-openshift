@@ -21,7 +21,7 @@
 							
 					<p:panel header="#{prod.name}" styleClass="catalog-panel">
 						<h:panelGrid columns="2">
-							<p:graphicImage value="#{productImageBean.image}" cache="false" styleClass="catalog-picture">
+							<p:graphicImage value="#{productImageBean.image}" cache="true" styleClass="catalog-picture">
     							<f:param name="productId" value="#{prod.id}" />
 							</p:graphicImage>
 							<h:outputText value="#{prod.unitCost}" converter="pc" styleClass="catalog-price"/>
