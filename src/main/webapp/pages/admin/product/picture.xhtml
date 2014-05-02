@@ -6,7 +6,7 @@
 
 					
 					<h:panelGrid columns="1" >
-						<p:graphicImage id="product_image" value="#{productImageBean.image}" cache="true" styleClass="editor-picture">
+						<p:graphicImage id="product_image" value="#{productImageBean.image}" cache="false" styleClass="editor-picture">
     							<f:param name="productId" value="#{productBean.product.id}" />
 						</p:graphicImage>
 						<p:commandButton value="change" oncomplete="uploadFileDlgW.show()" styleClass="editor-picture"/>
