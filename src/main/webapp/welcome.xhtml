@@ -7,6 +7,12 @@
 			<ui:define name="pageTitle">welcome</ui:define>		
 			<ui:define name="pageContent">
 				
-		  		<h2>Welcome</h2>			
+		  		<h2>Welcome</h2>
+		  		<h:form>
+		  			<h:panelGrid columns="2">
+		  				<h:commandLink value="GLOBAL COUNTER" action="/pages/push.jsf?faces-redirect=true"/>
+		  				<h:commandLink value="CHAT" action="/pages/chat.jsf?faces-redirect=true"/>
+		  			</h:panelGrid>
+		  		</h:form>			
 			</ui:define>
 </ui:composition>
